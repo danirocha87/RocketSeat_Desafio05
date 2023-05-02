@@ -1,0 +1,172 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+
+ 
+ 
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  padding: 4.8rem 6.4rem;
+  margin-top: 1rem;
+
+  
+}
+.caixa-principal {
+  max-width: 30rem;
+  height: 31.2rem;
+  display: grid;
+
+
+}
+
+.caixa-principal h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #34355B;
+  font-weight: 700;
+  max-width: 25.81rem;
+}
+
+.caixa-principal-msg h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #34355B;
+  font-weight: 700;
+  max-width: 29.7rem;
+
+  
+}
+
+.p-legenda {
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  color: #34355B;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+
+}
+
+.img-biscoito {
+  place-self: center;
+  animation: balancar;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  cursor: pointer;
+
+}
+
+.img-biscoito:hover {
+  animation-play-state: running;
+}
+
+@keyframes balancar {
+  0% {
+    transform: rotate(-2deg); 
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.caixa-principal-msg {
+  max-width: 30rem;
+  min-height: 46.8rem;
+  display: grid;
+  place-items: center;
+  gap: 1.7rem;
+}
+.p-msg {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  line-height: 2.88rem;
+  text-align: center;
+  font-size: 2.4rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
+  background: #E4EDF1;
+  animation: msganimada;
+  animation-duration: 1.2s;
+  padding: 1rem;
+  
+}
+
+@keyframes msganimada{
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+}
+
+.btn-opencookies {
+  color: #FFFFFF;
+  background-color: #FF9500;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 475px){
+
+  main {
+    padding: 4rem 2.5rem;
+  }
+}
